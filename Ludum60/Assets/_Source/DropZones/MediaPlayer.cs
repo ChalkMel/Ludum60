@@ -9,7 +9,6 @@ namespace _Source.DropZones
   public class MediaPlayer : MonoBehaviour, IDropTarget
   {
     [SerializeField] AudioSource source;
-    
     private Notebook _notebook;
     
     public void Init(Notebook notebook)
@@ -21,7 +20,6 @@ namespace _Source.DropZones
     {
       if (held is not MediaItem item) return;
       if (item.Data.Audio) source.PlayOneShot(item.Data.Audio);
-      _notebook.Clear();
       _notebook.Add(item.Data.PlayerNote);
     }
   }

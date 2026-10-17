@@ -1,13 +1,17 @@
 using _Source.Core;
 using _Source.DropZones;
 using _Source.InputSystem;
+using _Source.NotebookSystem;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using IDropTarget = _Source.InputSystem.IDropTarget;
 
 namespace _Source.Media
 {
-  public class MediaItem : MonoBehaviour, IHoldable
+  public class MediaItem : MonoBehaviour, IHoldable, IDropTarget
   {
     [field:SerializeField] public MediaData Data {get; private set;}
+    [SerializeField] Notebook _notebook;
     private Collider2D _collider;
     private bool _consumed;
     private bool _handledThisDrop;
@@ -33,6 +37,12 @@ namespace _Source.Media
       _collider.enabled = false;
       gameObject.SetActive(false);
       LevelController.Instance.OnItemConsumed();
+    }
+    
+    public void OnDrop(IHoldable held)
+    {
+      if (held is Magnifier)
+        _notebook.Add(Data.MagnifierNote);
     }
     
     public void Stash()

@@ -21,6 +21,7 @@ using UnityEngine;
       public void Add(string note)
       {
         if (string.IsNullOrEmpty(note) || _notes.Contains(note)) return;
+        Clear();
         _notes.Add(note);
         OnChanged?.Invoke();
       }
