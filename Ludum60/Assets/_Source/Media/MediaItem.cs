@@ -4,17 +4,21 @@ namespace _Source.Media
 {
   public class MediaItem : MonoBehaviour, IHoldable
   {
-    private Collider2D _col;
+    private MediaData _data;
+    private Collider2D _collider;
 
-    void Awake() => _col = GetComponent<Collider2D>();
+    void Awake()
+    {
+      _collider = GetComponent<Collider2D>();
+    }
 
     public void OnPickedUp()
     {
-      _col.enabled = false;
+      _collider.enabled = false;
     }
     public void OnDropped()
     {
-      _col.enabled = true;
+      _collider.enabled = true;
     }
   }
 }
