@@ -7,7 +7,7 @@ namespace _Source.Media
 {
   public class MediaItem : MonoBehaviour, IHoldable
   {
-    public MediaData Data {get; private set;}
+    [field:SerializeField] public MediaData Data {get; private set;}
     private Collider2D _collider;
     private bool _consumed;
     private bool _handledThisDrop;

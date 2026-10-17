@@ -5,7 +5,7 @@ namespace _Source.Media
   public enum MediaType { Cassette = 0, Disk = 1, Floppy = 2 }
   public enum ContentCategory { } //Потом скажут
 
-  [CreateAssetMenu(menuName = "Game/MediaData")]
+  [CreateAssetMenu(menuName = "Media/MediaData")]
   public class MediaData : ScriptableObject
   {
     [field:SerializeField] public MediaType Type {get; private set;}
