@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace _Source.InputSystem
 {
@@ -11,6 +12,7 @@ namespace _Source.InputSystem
 
     void HandleClick()
     {
+      if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
       Vector2 world = Camera.main.ScreenToWorldPoint(Input.mousePosition);
       var drag = DragController.Instance;
 

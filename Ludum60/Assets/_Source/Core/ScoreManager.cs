@@ -4,7 +4,7 @@ namespace _Source.Core
 {
   public class ScoreManager : MonoBehaviour
   {
-    public static ScoreManager Instance;
+    public ScoreManager Instance;
     public int TotalSorted { get; private set; }
     public int Errors { get; private set; }
 

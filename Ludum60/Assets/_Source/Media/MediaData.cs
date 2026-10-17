@@ -15,7 +15,7 @@ namespace _Source.Media
     [field:SerializeField] public bool IsSuspicious{get; private set;}
 
     [field:SerializeField] public AudioClip Audio {get; private set;}
-    [field:TextArea] public string PlayerNote{get; private set;}
-    [field:TextArea] public string MagnifierNote{get; private set;}
+    [field:SerializeField] public string PlayerNote{get; private set;}
+    [field:SerializeField] public string MagnifierNote{get; private set;}
   }
 }
