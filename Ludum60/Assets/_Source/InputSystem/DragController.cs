@@ -1,7 +1,6 @@
-using _Source.InputSystem;
 using UnityEngine;
 
-namespace _Source
+namespace _Source.InputSystem
 {
   public class DragController : MonoBehaviour
   {

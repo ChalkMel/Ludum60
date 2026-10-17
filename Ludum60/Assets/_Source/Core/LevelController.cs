@@ -13,7 +13,7 @@ namespace _Source.Core
     private int _consumed;
     
     void Awake() => Instance = this;
-    void Start() => _total = FindObjectsOfType<MediaItem>(true).Length;
+    void Start() => _total = FindObjectsOfType<MediaItem>(true).Length; //TODO
 
     public void OnItemConsumed()
     {

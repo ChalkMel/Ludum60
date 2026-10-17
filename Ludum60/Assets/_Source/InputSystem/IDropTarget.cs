@@ -1,6 +1,4 @@
-using _Source.InputSystem;
-
-namespace _Source
+namespace _Source.InputSystem
 {
   public interface IDropTarget
   {
