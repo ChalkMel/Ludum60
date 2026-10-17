@@ -16,6 +16,7 @@ namespace _Source.Core
     [SerializeField] MediaStack mediaStack;
     [SerializeField] Shredder shredder;
     [SerializeField] List<SortBox> sortBoxes = new();
+    [SerializeField] EndLevel endLevel;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ namespace _Source.Core
         sortBox.Init(scoreManager);
       shredder.Init(scoreManager);
       mediaPlayer.Init(notebook);
+      endLevel.Init(scoreManager, levelController);
+      levelController.Init(endLevel);
     }
   }
 }
