@@ -1,4 +1,5 @@
 using _Source.InputSystem;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Source.DropZones
@@ -19,7 +20,6 @@ namespace _Source.DropZones
     public void OnDropped()
     {
       _collider.enabled = true;
-      //transform.position = _home;
     }
   }
 }
