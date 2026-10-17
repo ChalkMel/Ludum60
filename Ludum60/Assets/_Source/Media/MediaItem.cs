@@ -42,7 +42,7 @@ namespace _Source.Media
     public void OnDrop(IHoldable held)
     {
       if (held is Magnifier)
-        _notebook.Add(Data.MagnifierNote);
+        _notebook.Add(this, Data.MagnifierNote);
     }
     
     public void Stash()

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
   m_Name: Disk1
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 1
+  <Type>k__BackingField: 0
   <Year>k__BackingField: 2000
   <Content>k__BackingField: 0
   <IsBroken>k__BackingField: 0
   <IsSuspicious>k__BackingField: 0
-  <Audio>k__BackingField: {fileID: 0}
+  <Audio>k__BackingField: {fileID: 8300000, guid: 89b974257ca18514f95399a002a28005, type: 3}
   <PlayerNote>k__BackingField: He said he hated me
-  <MagnifierNote>k__BackingField: made in 1990
+  <MagnifierNote>k__BackingField: Nothing impotant
+  <PhoneNumber>k__BackingField: 
+  <PhoneTalk>k__BackingField: []

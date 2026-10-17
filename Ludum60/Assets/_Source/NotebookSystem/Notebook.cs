@@ -6,30 +6,38 @@ using UnityEngine;
   {
     public class Notebook : MonoBehaviour
     {
-      public Notebook Instance;
-      private readonly List<string> _notes = new();
+      private readonly List<Note> _notes = new();
+      private object _currentOwner;
+
       public Action OnChanged;
-      public IReadOnlyList<string> Notes => _notes;
+      public IReadOnlyList<Note> Notes => _notes;
 
-      private void Awake()
+      public void Add(object owner, string text)
       {
-        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-      }
+        if (owner == null || string.IsNullOrEmpty(text)) return;
+        
+        if (_currentOwner != null && !ReferenceEquals(_currentOwner, owner))
+          ClearInternal();
 
-      public void Add(string note)
-      {
-        if (string.IsNullOrEmpty(note) || _notes.Contains(note)) return;
-        Clear();
-        _notes.Add(note);
+        _currentOwner = owner;
+        
+        foreach (var n in _notes)
+          if (ReferenceEquals(n.Owner, owner) && n.Text == text) return;
+
+        _notes.Add(new Note(owner, text));
         OnChanged?.Invoke();
       }
 
       public void Clear()
       {
-        _notes.Clear();
+        ClearInternal();
         OnChanged?.Invoke();
+      }
+
+      private void ClearInternal()
+      {
+        _notes.Clear();
+        _currentOwner = null;
       }
     }
   }

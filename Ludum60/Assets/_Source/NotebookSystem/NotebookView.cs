@@ -32,7 +32,7 @@ namespace _Source.NotebookSystem
       }
 
       foreach (var n in _notebook.Notes)
-        Instantiate(linePrefab, content).text = n;
+        Instantiate(linePrefab, content).text = "-" + n.Text + "\n";
     }
 
     private void OnDestroy()

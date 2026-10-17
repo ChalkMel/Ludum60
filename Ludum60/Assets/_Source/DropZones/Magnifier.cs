@@ -19,7 +19,7 @@ namespace _Source.DropZones
     public void OnDropped()
     {
       _collider.enabled = true;
-      transform.position = _home;
+      //transform.position = _home;
     }
   }
 }

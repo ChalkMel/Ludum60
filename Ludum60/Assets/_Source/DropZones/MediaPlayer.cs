@@ -41,13 +41,14 @@ namespace _Source.DropZones
       item.Stash();
 
       if (item.Data.Audio) source.PlayOneShot(item.Data.Audio);
-      _notebook.Add(item.Data.PlayerNote);
+      _notebook.Add(item, item.Data.PlayerNote);
     }
 
     private void EjectToHand()
     {
       var item = _inserted;
       _inserted = null;
+      source.Stop();
 
       item.transform.SetParent(null, true);
       item.Restore();
