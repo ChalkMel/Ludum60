@@ -17,5 +17,7 @@ namespace _Source.Media
     [field:SerializeField] public AudioClip Audio {get; private set;}
     [field:SerializeField] public string PlayerNote{get; private set;}
     [field:SerializeField] public string MagnifierNote{get; private set;}
+    [field:SerializeField] public string PhoneNumber { get; private set; }
+    [field: SerializeField] public string[] PhoneTalk { get; private set; }
   }
 }

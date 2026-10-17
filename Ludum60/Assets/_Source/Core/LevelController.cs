@@ -1,4 +1,5 @@
 using _Source.Media;
+using _Source.PhoneSystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,14 +14,23 @@ namespace _Source.Core
     private int _total;
     private int _consumed;
     private EndLevel _endLevel;
+    private Phone _phone;
+    private bool _ringOnStart;
     
-    public void Init(EndLevel endLevel)
+    public void Init(EndLevel endLevel, Phone phone, bool ringOnStart)
     {
       _endLevel = endLevel;
+      _phone = phone;
+      _ringOnStart = ringOnStart;
+    }
+
+    private void Start()
+    {
+      _total = FindObjectsOfType<MediaItem>(true).Length; //TODO
+      if (_ringOnStart) _phone?.RingForIntro();
     }
     
     void Awake() => Instance = this;
-    void Start() => _total = FindObjectsOfType<MediaItem>(true).Length; //TODO
 
     public void OnItemConsumed()
     {

@@ -1,33 +1,38 @@
-using System;
 using System.Collections.Generic;
 using _Source.DropZones;
 using _Source.NotebookSystem;
+using _Source.PhoneSystem;
 using UnityEngine;
 
 namespace _Source.Core
 {
   public class Bootstrapper : MonoBehaviour
   {
-    [SerializeField] Notebook notebook;
-    [SerializeField] List<NotebookView> notebookViews = new();
-    [SerializeField] LevelController levelController;
-    [SerializeField] ScoreManager scoreManager;
-    [SerializeField] MediaPlayer mediaPlayer;
-    [SerializeField] MediaStack mediaStack;
-    [SerializeField] Shredder shredder;
-    [SerializeField] List<SortBox> sortBoxes = new();
-    [SerializeField] EndLevel endLevel;
+    [SerializeField] private Notebook notebook;
+    [SerializeField] private List<NotebookView> notebookViews = new();
+    [SerializeField] private LevelController levelController;
+    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private MediaPlayer mediaPlayer;
+    [SerializeField] private MediaStack mediaStack;
+    [SerializeField] private Shredder shredder;
+    [SerializeField] private List<SortBox> sortBoxes = new();
+    [SerializeField] private EndLevel endLevel;
+    [SerializeField] private Phone phone;
+    [SerializeField] private DialogueView dialogueView;
+    [SerializeField] private DialerView dialerView;
+    [SerializeField] private bool ringOnStart;
 
     private void Awake()
     {
-      foreach (var notebookView in notebookViews)
-        notebookView.Init(notebook);
-      foreach (SortBox sortBox in sortBoxes)
-        sortBox.Init(scoreManager);
+      foreach (var view in notebookViews) 
+        view.Init(notebook);
+      foreach (var box in sortBoxes) 
+        box.Init(scoreManager);
       shredder.Init(scoreManager);
       mediaPlayer.Init(notebook);
       endLevel.Init(scoreManager, levelController);
-      levelController.Init(endLevel);
+      phone.Init(dialogueView, dialerView, notebook);
+      levelController.Init(endLevel, phone, ringOnStart);
     }
   }
 }

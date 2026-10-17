@@ -20,3 +20,8 @@ MonoBehaviour:
   <Audio>k__BackingField: {fileID: 0}
   <PlayerNote>k__BackingField: He said he loved me
   <MagnifierNote>k__BackingField: made in 7039
+  <PhoneNumber>k__BackingField: 1010
+  <PhoneTalk>k__BackingField:
+  - This is
+  - Test
+  - Call
