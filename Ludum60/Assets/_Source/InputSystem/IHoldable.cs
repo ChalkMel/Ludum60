@@ -1,4 +1,4 @@
-namespace _Source
+namespace _Source.InputSystem
 {
   public interface IHoldable
   {

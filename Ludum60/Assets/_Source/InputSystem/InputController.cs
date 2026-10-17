@@ -4,7 +4,7 @@ namespace _Source.InputSystem
 {
   public class InputController : MonoBehaviour
   {
-    void Update()
+     private void Update()
     {
       if (Input.GetMouseButtonDown(0)) HandleClick();
     }
@@ -16,8 +16,11 @@ namespace _Source.InputSystem
 
       if (drag.Held == null)
       {
-        var h = Raycast<IHoldable>(world, drag.Held);
-        if (h != null) drag.PickUp(h);
+        var holdable = Raycast<IHoldable>(world, null);
+        if (holdable != null) { drag.PickUp(holdable); return; }
+
+        var clickable = Raycast<IClickable>(world, null);
+        clickable?.OnClick();
       }
       else
       {
