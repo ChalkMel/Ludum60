@@ -1,4 +1,6 @@
+using _Source.Core;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace _Source.Media
 {
@@ -15,12 +17,16 @@ namespace _Source.Media
     [field:SerializeField] public bool IsSuspicious{get; private set;}
 
     [field:SerializeField] public AudioClip Audio {get; private set;}
-    [field:SerializeField] public string PlayerNote{get; private set;}
-    [field:SerializeField] public string MagnifierNote{get; private set;}
     [field:SerializeField] public string PhoneNumber { get; private set; }
-    [field: SerializeField] public string[] PhoneTalk { get; private set; }
     [field: SerializeField] public bool IsSecretNumber   { get; private set; }
     [field: SerializeField] public bool IsSpecialCassette { get; private set; }
     [field: SerializeField] public Sprite Sprite  { get; private set; }
+    
+    [field:SerializeField] private LocalizedString playerNote;
+    [field:SerializeField] private LocalizedString magnifierNote;
+    [field:SerializeField] private LocalizedString[] phoneTalk;
+    public string PlayerNote => playerNote.GetLocalizedString();
+    public string MagnifierNote => magnifierNote.GetLocalizedString();
+    public string[] PhoneTalk => phoneTalk.ResolveAll();
   }
 }

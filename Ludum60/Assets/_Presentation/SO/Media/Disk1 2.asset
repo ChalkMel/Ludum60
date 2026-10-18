@@ -18,13 +18,29 @@ MonoBehaviour:
   <IsBroken>k__BackingField: 0
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 0}
-  <PlayerNote>k__BackingField: He said he mogged me
-  <MagnifierNote>k__BackingField: made in 2000
-  <PhoneNumber>k__BackingField: 2020
-  <PhoneTalk>k__BackingField:
-  - Hey
-  - You will be destroyed
-  - Sowwy
-  <IsSecretNumber>k__BackingField: 1
+  <PhoneNumber>k__BackingField: 
+  <IsSecretNumber>k__BackingField: 0
   <IsSpecialCassette>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: -6295324800732508447, guid: 0350e74242d1d6647a6e6576a00c3264, type: 3}
+  <Sprite>k__BackingField: {fileID: 2852065575287605834, guid: ba49a834b9ffa8d4092956a0aaaf0be0, type: 3}
+  playerNote:
+    m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 2005648629760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  magnifierNote:
+    m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 4747741978624
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  phoneTalk: []
+  references:
+    version: 2
+    RefIds: []

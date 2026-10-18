@@ -69,7 +69,7 @@ namespace _Source.Story
 
       bool last = _index == _pages.Length - 1;
       if (nextButtonLabel != null)
-        nextButtonLabel.text = last ? "Next" : "The End";
+        nextButtonLabel.text = last ? Loc.Get("end") : Loc.Get("next");
       if (last)
       {
         nextButton.onClick.AddListener(OpenMainMenu);

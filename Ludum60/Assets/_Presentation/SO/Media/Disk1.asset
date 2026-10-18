@@ -18,10 +18,53 @@ MonoBehaviour:
   <IsBroken>k__BackingField: 0
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 8300000, guid: 89b974257ca18514f95399a002a28005, type: 3}
-  <PlayerNote>k__BackingField: He said he hated me
-  <MagnifierNote>k__BackingField: Nothing impotant
-  <PhoneNumber>k__BackingField: 
-  <PhoneTalk>k__BackingField: []
-  <IsSecretNumber>k__BackingField: 0
+  <PhoneNumber>k__BackingField: 2020
+  <IsSecretNumber>k__BackingField: 1
   <IsSpecialCassette>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: -2617984254392604252, guid: 941217007bd3d7e4bbd3bc4b2b5c9a9e, type: 3}
+  playerNote:
+    m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 5452161024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  magnifierNote:
+    m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 2005648629760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  phoneTalk:
+  - m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 2063987204096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 2130508865536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+    m_TableEntryReference:
+      m_KeyId: 2199551303680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

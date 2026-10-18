@@ -26,7 +26,8 @@ namespace _Source.Core
     public void Stats()
     {
       endShiftPanel.SetActive(true);
-      text.text = $"{_scoreManager.TotalSorted - _scoreManager.Errors} / {_scoreManager.TotalSorted} sorted right";
+      int correct = _scoreManager.TotalSorted - _scoreManager.Errors;
+      text.text = Loc.Get("UI", "end.sorted", correct, _scoreManager.TotalSorted);
     }
 
     private void HandleNext()

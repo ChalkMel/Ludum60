@@ -12,9 +12,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f554812037c4a889e6779c514c5df7e, type: 3}
   m_Name: New Ending Data
   m_EditorClassIdentifier: 
-  DefaultEndingPages:
-  - And then
-  - He died
-  RobotEndingPages:
-  - And then
-  - He didn't die
+  defaultEndingPages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 35516932096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 113556152320
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 150067568640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  robotEndingPages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 253524271104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 319722971136
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:ac575df01475a1a4da2eb1f0ebb77acf
+    m_TableEntryReference:
+      m_KeyId: 333773889536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

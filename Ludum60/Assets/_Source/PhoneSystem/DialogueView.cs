@@ -1,3 +1,4 @@
+using _Source.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,7 +52,9 @@ namespace _Source.PhoneSystem
       label.text = _pages[_index];
 
       if (nextButtonLabel != null)
-        nextButtonLabel.text = _index < _pages.Length - 1 ? "Next" : "Close";
+        nextButtonLabel.text = _index < _pages.Length - 1
+          ? Loc.Get("next")
+          : Loc.Get("close");
     }
   }
 }

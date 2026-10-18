@@ -12,11 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825c3da4f38847ea84ceae51ddb8473b, type: 3}
   m_Name: Phone1
   m_EditorClassIdentifier: 
-  <IntroPages>k__BackingField:
-  - Hey
-  - I am calling to tell you
-  - You sre cool
-  <WrongNumberPages>k__BackingField:
-  - Somehing went wrong
-  <NoNumberPages>k__BackingField:
-  - That number seem to be abandoned
+  introPages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:49048ba1253993a4493da9cf9020c55b
+    m_TableEntryReference:
+      m_KeyId: 9252200448
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:49048ba1253993a4493da9cf9020c55b
+    m_TableEntryReference:
+      m_KeyId: 119373651968
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:49048ba1253993a4493da9cf9020c55b
+    m_TableEntryReference:
+      m_KeyId: 128332685312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  wrongNumberPages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:49048ba1253993a4493da9cf9020c55b
+    m_TableEntryReference:
+      m_KeyId: 369408696320
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  noNumberPages:
+  - m_TableReference:
+      m_TableCollectionName: GUID:49048ba1253993a4493da9cf9020c55b
+    m_TableEntryReference:
+      m_KeyId: 397334372352
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
