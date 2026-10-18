@@ -9,15 +9,20 @@ namespace _Source.DropZones
   public class MediaPlayer : MonoBehaviour, IDropTarget, IClickable
   {
     [SerializeField] AudioSource source;
+    [SerializeField] Sprite playSprite;
     private Notebook _notebook;
     
     private MediaItem _inserted;
+    private SpriteRenderer _spriteRenderer;
+    private Sprite _originalSprite;
 
     public bool IsBusy => _inserted != null;
     
     public void Init(Notebook notebook)
     {
       _notebook = notebook;
+      _spriteRenderer = GetComponent<SpriteRenderer>();
+      _originalSprite = _spriteRenderer.sprite;
     }
     
     public void OnDrop(IHoldable held)
@@ -42,6 +47,7 @@ namespace _Source.DropZones
 
       if (item.Data.Audio) source.PlayOneShot(item.Data.Audio);
       _notebook.Add(item, item.Data.PlayerNote);
+      _spriteRenderer.sprite = playSprite;
     }
 
     private void EjectToHand()
@@ -53,6 +59,7 @@ namespace _Source.DropZones
       item.transform.SetParent(null, true);
       item.Restore();
       DragController.Instance.PickUp(item);
+      _spriteRenderer.sprite = _originalSprite;
     }
   }
 }

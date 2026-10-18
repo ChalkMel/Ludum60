@@ -8,12 +8,15 @@ namespace _Source.Menu
   {
     [SerializeField] private Button playButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Button settingsButton;
+    [SerializeField] private GameObject setingsMenu;
     [SerializeField] private bool isMainMenu;
 
     private void Start()
     {
       playButton.onClick.AddListener(Play);
       quitButton.onClick.AddListener(Quit);
+      settingsButton.onClick.AddListener(OpenSetting);
     }
     private void Play()
     {
@@ -23,6 +26,11 @@ namespace _Source.Menu
     private void Quit()
     {
       Application.Quit();
+    }
+    
+    private void OpenSetting()
+    {
+      setingsMenu.SetActive(true);
     }
   }
 }

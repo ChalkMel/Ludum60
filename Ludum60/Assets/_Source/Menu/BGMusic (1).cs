@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class BGMusic : MonoBehaviour
+namespace _Source.Menu
 {
-    public static BGMusic Instance { get; private set; }
-
-    private void Awake()
+    public class BGMusic : MonoBehaviour
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        public static BGMusic Instance { get; private set; }
 
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
