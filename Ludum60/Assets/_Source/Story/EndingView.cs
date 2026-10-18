@@ -2,6 +2,7 @@ using _Source.Core;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace _Source.Story
@@ -71,8 +72,13 @@ namespace _Source.Story
         nextButtonLabel.text = last ? "Next" : "The End";
       if (last)
       {
-        nextButton.onClick.AddListener(levelController.OpenMainMenu);
+        nextButton.onClick.AddListener(OpenMainMenu);
       }
+    }
+    
+    public void OpenMainMenu()
+    {
+      SceneManager.LoadScene($"MainMenu");
     }
   }
 }

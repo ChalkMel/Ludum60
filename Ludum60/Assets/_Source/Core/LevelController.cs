@@ -42,10 +42,5 @@ namespace _Source.Core
       if (!string.IsNullOrEmpty(nextScene)) SceneManager.LoadScene(nextScene);
       else Debug.Log("Game over");
     }
-
-    public void OpenMainMenu()
-    {
-      SceneManager.LoadScene($"MainMenu");
-    }
   }
 }

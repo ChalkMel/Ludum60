@@ -16,15 +16,12 @@ MonoBehaviour:
   <Year>k__BackingField: 2000
   <Content>k__BackingField: 0
   <IsBroken>k__BackingField: 1
-  <IsSuspicious>k__BackingField: 0
+  <IsSuspicious>k__BackingField: 1
   <Audio>k__BackingField: {fileID: 0}
-  <PlayerNote>k__BackingField: He said he loved me
-  <MagnifierNote>k__BackingField: made in 7039
-  <PhoneNumber>k__BackingField: 1010
-  <PhoneTalk>k__BackingField:
-  - This is
-  - Test
-  - Call
+  <PlayerNote>k__BackingField: 
+  <MagnifierNote>k__BackingField: 
+  <PhoneNumber>k__BackingField: 
+  <PhoneTalk>k__BackingField: []
   <IsSecretNumber>k__BackingField: 0
   <IsSpecialCassette>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: 8606492463374734475, guid: 6c46f3b8d560ad24b8298debb5963a7a, type: 3}
