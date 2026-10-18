@@ -18,7 +18,7 @@ MonoBehaviour:
   <IsBroken>k__BackingField: 1
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 0}
-  <PhoneNumber>k__BackingField: 
+  <PhoneNumber>k__BackingField: 1735
   <IsSecretNumber>k__BackingField: 1
   <IsSpecialCassette>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: -4970697777084416995, guid: cf8c0f37abbb81148a07a166767e1b2d, type: 3}

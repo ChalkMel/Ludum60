@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/_Presentation/Scenes/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/_Presentation/Scenes/Level 2.unity
-    guid: f29e52db504518e4f941bf780dab2df2
-  - enabled: 1
     path: Assets/_Presentation/Scenes/Level2.unity
-    guid: 920d99105bcdaa845b609ce8334398c3
+    guid: 89006a764e0a0ce4cb3e6ade21a27226
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Level3.unity
+    guid: f7cd671ba18198f4bb282e23079112eb
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 64568637fd7984949b933081aaca7d51, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
