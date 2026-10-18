@@ -8,8 +8,9 @@ namespace _Source.DropZones
 {
   public class MediaPlayer : MonoBehaviour, IDropTarget, IClickable
   {
-    [SerializeField] AudioSource source;
-    [SerializeField] Sprite playSprite;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private Sprite playSprite;
+    [SerializeField] private SpriteRenderer slot;
     private Notebook _notebook;
     
     private MediaItem _inserted;
@@ -41,6 +42,7 @@ namespace _Source.DropZones
     private void Insert(MediaItem item)
     {
       _inserted = item;
+      slot.sprite = item.Data.Sprite;
       
       item.transform.SetParent(transform, true);
       item.Stash();
@@ -54,6 +56,7 @@ namespace _Source.DropZones
     {
       var item = _inserted;
       _inserted = null;
+      slot.sprite = null;
       source.Stop();
 
       item.transform.SetParent(null, true);

@@ -25,8 +25,15 @@ namespace _Source.Media
     [field:SerializeField] private LocalizedString playerNote;
     [field:SerializeField] private LocalizedString magnifierNote;
     [field:SerializeField] private LocalizedString[] phoneTalk;
-    public string PlayerNote => playerNote.GetLocalizedString();
-    public string MagnifierNote => magnifierNote.GetLocalizedString();
+    public string PlayerNote
+      => playerNote == null || playerNote.IsEmpty
+        ? string.Empty
+        : playerNote.GetLocalizedString();
+
+    public string MagnifierNote
+      => magnifierNote == null || magnifierNote.IsEmpty
+        ? string.Empty
+        : magnifierNote.GetLocalizedString();
     public string[] PhoneTalk => phoneTalk.ResolveAll();
   }
 }
