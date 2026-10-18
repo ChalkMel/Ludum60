@@ -24,6 +24,7 @@ namespace _Source.Core
 
     private void Awake()
     {
+      mediaStack.Init();
       foreach (var view in notebookViews) 
         view.Init(notebook);
       foreach (var box in sortBoxes) 
@@ -31,8 +32,8 @@ namespace _Source.Core
       shredder.Init(scoreManager);
       mediaPlayer.Init(notebook);
       endLevel.Init(scoreManager, levelController);
-      phone.Init(dialogueView, dialerView, notebook);
-      levelController.Init(endLevel, phone, ringOnStart);
+      phone.Init(dialogueView, dialerView, notebook, mediaStack.GetTotalStack());
+      levelController.Init(endLevel, phone, ringOnStart, mediaStack.GetTotalStack());
     }
   }
 }

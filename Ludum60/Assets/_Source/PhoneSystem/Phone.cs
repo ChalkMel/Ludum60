@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using _Source.Core;
 using _Source.InputSystem;
 using _Source.Media;
 using _Source.NotebookSystem;
@@ -14,18 +16,20 @@ namespace _Source.PhoneSystem
         private DialerView _dialer;
         private Notebook _notebook;
         private bool _hasRungToday;
+        private List<MediaItem> _items;
 
         private void Awake()
         {
             if (ringSource == null) ringSource = GetComponent<AudioSource>();
         }
 
-        public void Init(DialogueView dialogue, DialerView dialer, Notebook notebook)
+        public void Init(DialogueView dialogue, DialerView dialer, Notebook notebook, List<MediaItem> items)
         {
             _dialogue = dialogue;
             _dialer = dialer;
             _notebook = notebook;
             _dialer.OnCall += HandleCall;
+            _items = items;
         }
 
         private void OnDestroy()
@@ -63,14 +67,17 @@ namespace _Source.PhoneSystem
 
             MediaItem match = FindItemWithNumber(number);
             if (match == null) { _dialogue.Show(data.WrongNumberPages); return; }
-            
+
+            if (match.Data.IsSecretNumber)
+                GameSession.MarkSecretNumberCalled();
+
             _dialogue.Show(match.Data.PhoneTalk);
         }
 
-        private static MediaItem FindItemWithNumber(string number)
+        private MediaItem FindItemWithNumber(string number)
         {
             if (string.IsNullOrEmpty(number)) return null;
-            foreach (var item in FindObjectsOfType<MediaItem>(true))
+            foreach (var item in _items)
                 if (item.Data != null && item.Data.PhoneNumber == number)
                     return item;
             return null;

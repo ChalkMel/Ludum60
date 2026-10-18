@@ -27,8 +27,10 @@ namespace _Source.InputSystem
       else
       {
         var target = Raycast<IDropTarget>(world, drag.Held);
-        target?.OnDrop(drag.Held);
-        drag.Drop();
+        var dropped = drag.Held;
+        target?.OnDrop(dropped);
+        if (ReferenceEquals(drag.Held, dropped))
+          drag.Drop();
       }
     }
   

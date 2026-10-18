@@ -19,5 +19,8 @@ namespace _Source.Media
     [field:SerializeField] public string MagnifierNote{get; private set;}
     [field:SerializeField] public string PhoneNumber { get; private set; }
     [field: SerializeField] public string[] PhoneTalk { get; private set; }
+    [field: SerializeField] public bool IsSecretNumber   { get; private set; }
+    [field: SerializeField] public bool IsSpecialCassette { get; private set; }
+    [field: SerializeField] public Sprite Sprite  { get; private set; }
   }
 }

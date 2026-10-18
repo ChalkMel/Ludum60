@@ -11,21 +11,27 @@ namespace _Source.Media
     public class MediaItem : MonoBehaviour, IHoldable, IDropTarget
     {
         [field:SerializeField] public MediaData Data { get; private set; }
-        [SerializeField] private Notebook _notebook;
-
+        private Notebook _notebook;
         private Collider2D _collider;
         private Vector3 _baseScale;
         private bool _consumed;
         private bool _handledThisDrop;
         private MediaStack _originStack;
+        private LevelController _levelController;
 
         private const float HoverScale = 1.2f;
         private const float TweenDuration = 0.2f;
-
+        
+        public void Init(Notebook notebook, LevelController levelController)
+        {
+            _notebook = notebook;
+            _levelController = levelController;
+        }
         private void Awake()
         {
             _collider = GetComponent<Collider2D>();
             _baseScale = transform.lossyScale;
+            GetComponent<SpriteRenderer>().sprite = Data.Sprite;
         }
 
         public void OnPickedUp()
@@ -34,6 +40,9 @@ namespace _Source.Media
             _handledThisDrop = false;
             transform.DOKill();
             transform.DOScale(_baseScale * HoverScale, TweenDuration);
+
+            if (Data != null && Data.IsSpecialCassette)
+                GameSession.NotifySpecialCassettePickedUp(this);
         }
 
         public void OnDropped()
@@ -60,7 +69,7 @@ namespace _Source.Media
             transform.DOKill();
             _collider.enabled = false;
             gameObject.SetActive(false);
-            LevelController.Instance.OnItemConsumed();
+            _levelController.OnItemConsumed();
         }
 
         public void Stash()

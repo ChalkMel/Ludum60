@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
   m_Name: Disk1 2
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 1
+  <Type>k__BackingField: 0
   <Year>k__BackingField: 2000
   <Content>k__BackingField: 0
   <IsBroken>k__BackingField: 0
@@ -20,5 +20,11 @@ MonoBehaviour:
   <Audio>k__BackingField: {fileID: 0}
   <PlayerNote>k__BackingField: He said he mogged me
   <MagnifierNote>k__BackingField: made in 2000
-  <PhoneNumber>k__BackingField: 
-  <PhoneTalk>k__BackingField: []
+  <PhoneNumber>k__BackingField: 2020
+  <PhoneTalk>k__BackingField:
+  - Hey
+  - You will be destroyed
+  - Sowwy
+  <IsSecretNumber>k__BackingField: 1
+  <IsSpecialCassette>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: -6295324800732508447, guid: 0350e74242d1d6647a6e6576a00c3264, type: 3}

@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using _Source.Core;
 using _Source.InputSystem;
 using _Source.Media;
+using _Source.NotebookSystem;
 using UnityEngine;
 
 namespace _Source.DropZones
@@ -8,18 +10,24 @@ namespace _Source.DropZones
   public class MediaStack : MonoBehaviour, IClickable, IDropTarget
   {
     [SerializeField] Transform spawnPoint;
-
+    [SerializeField] Notebook notebook;
+    [SerializeField] LevelController levelController;
     readonly Stack<MediaItem> _items = new();
+    private List<MediaItem> _totalStack = new();
 
-    void Awake()
+    public void Init()
     {
-      foreach (var item in GetComponentsInChildren<MediaItem>(true))
+      _totalStack = new List<MediaItem>(GetComponentsInChildren<MediaItem>(true));
+      foreach (var item in _totalStack)
       {
+        item.Init(notebook, levelController);
         item.SetOriginStack(this);
         item.gameObject.SetActive(false);
         _items.Push(item);
       }
     }
+    
+    public List<MediaItem> GetTotalStack() => _totalStack;
 
     public int Count => _items.Count;
     

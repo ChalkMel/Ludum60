@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
   m_Name: Disk1
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 0
+  <Type>k__BackingField: 1
   <Year>k__BackingField: 2000
   <Content>k__BackingField: 0
   <IsBroken>k__BackingField: 0
@@ -22,3 +22,6 @@ MonoBehaviour:
   <MagnifierNote>k__BackingField: Nothing impotant
   <PhoneNumber>k__BackingField: 
   <PhoneTalk>k__BackingField: []
+  <IsSecretNumber>k__BackingField: 0
+  <IsSpecialCassette>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: -2617984254392604252, guid: 941217007bd3d7e4bbd3bc4b2b5c9a9e, type: 3}

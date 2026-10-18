@@ -4,19 +4,8 @@ namespace _Source.Core
 {
   public class ScoreManager : MonoBehaviour
   {
-    public ScoreManager Instance;
     public int TotalSorted { get; private set; }
     public int Errors { get; private set; }
-
-    void Awake()
-    {
-      if (Instance && Instance != this)
-      {
-        Destroy(gameObject); return;
-      }
-      Instance = this; 
-      DontDestroyOnLoad(gameObject);
-    }
 
     public void Record(bool correct) 
     {

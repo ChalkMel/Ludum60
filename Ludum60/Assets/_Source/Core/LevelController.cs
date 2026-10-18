@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using _Source.Media;
 using _Source.PhoneSystem;
 using TMPro;
@@ -8,7 +9,6 @@ namespace _Source.Core
 {
   public class LevelController : MonoBehaviour
   {
-    public static LevelController Instance;
     [SerializeField] string nextScene;
 
     private int _total;
@@ -17,20 +17,19 @@ namespace _Source.Core
     private Phone _phone;
     private bool _ringOnStart;
     
-    public void Init(EndLevel endLevel, Phone phone, bool ringOnStart)
+    public bool HasNextLevel => !string.IsNullOrEmpty(nextScene);
+    public void Init(EndLevel endLevel, Phone phone, bool ringOnStart, List<MediaItem> media)
     {
       _endLevel = endLevel;
       _phone = phone;
       _ringOnStart = ringOnStart;
+      _total = media.Count;
     }
 
     private void Start()
     {
-      _total = FindObjectsOfType<MediaItem>(true).Length; //TODO
       if (_ringOnStart) _phone?.RingForIntro();
     }
-    
-    void Awake() => Instance = this;
 
     public void OnItemConsumed()
     {
@@ -38,10 +37,15 @@ namespace _Source.Core
       _endLevel.Stats();
     }
 
-    public void NextLevel()
+    public void OpenLevel()
     {
       if (!string.IsNullOrEmpty(nextScene)) SceneManager.LoadScene(nextScene);
       else Debug.Log("Game over");
+    }
+
+    public void OpenMainMenu()
+    {
+      SceneManager.LoadScene($"MainMenu");
     }
   }
 }
