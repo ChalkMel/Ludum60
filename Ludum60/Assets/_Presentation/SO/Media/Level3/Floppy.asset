@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
-  m_Name: Disk1
+  m_Name: Floppy
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 1
-  <Year>k__BackingField: 2000
-  <Content>k__BackingField: 0
+  <Type>k__BackingField: 2
+  <Year>k__BackingField: 2062
+  <Content>k__BackingField: 1
   <IsBroken>k__BackingField: 0
   <IsSuspicious>k__BackingField: 0
-  <Audio>k__BackingField: {fileID: 8300000, guid: 89b974257ca18514f95399a002a28005, type: 3}
-  <PhoneNumber>k__BackingField: 2020
-  <IsSecretNumber>k__BackingField: 1
+  <Audio>k__BackingField: {fileID: 0}
+  <PhoneNumber>k__BackingField: 
+  <IsSecretNumber>k__BackingField: 0
   <IsSpecialCassette>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: -2617984254392604252, guid: 941217007bd3d7e4bbd3bc4b2b5c9a9e, type: 3}
   playerNote:
     m_TableReference:
       m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
     m_TableEntryReference:
-      m_KeyId: 5452161024
+      m_KeyId: 49749574639619
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -35,36 +35,12 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
     m_TableEntryReference:
-      m_KeyId: 2005648629760
+      m_KeyId: 51933330628608
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  phoneTalk:
-  - m_TableReference:
-      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
-    m_TableEntryReference:
-      m_KeyId: 2063987204096
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
-    m_TableEntryReference:
-      m_KeyId: 2130508865536
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
-    m_TableEntryReference:
-      m_KeyId: 2199551303680
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  phoneTalk: []
   references:
     version: 2
     RefIds: []

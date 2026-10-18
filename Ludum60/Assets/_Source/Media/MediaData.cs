@@ -4,8 +4,8 @@ using UnityEngine.Localization;
 
 namespace _Source.Media
 {
-  public enum MediaType { Cassette = 0, Disk = 1, Floppy = 2 }
-  public enum ContentCategory { } //Потом скажут
+  public enum MediaType { Cassette = 0, Disk = 1, Floppy = 2, none }
+  public enum ContentCategory { Professional, News, Personal, none }
 
   [CreateAssetMenu(menuName = "Media/MediaData")]
   public class MediaData : ScriptableObject

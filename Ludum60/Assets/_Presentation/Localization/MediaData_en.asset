@@ -18,32 +18,190 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 5452161024
-    m_Localized: Example note 1
+  - m_Id: 49749574639621
+    m_Localized: "Hey, Dad! Remember that tea you liked at that little caf\xE9 near
+      home? I got the recipe! Write this down: for one mug, you'll need one teaspoon
+      of black tea, two slices of dried apple, and a pinch of cinnamon. Bring the
+      water to a boil, then let it cool to 80\xB0C. Pour it over the tea and let
+      it steep for five minutes. If you'd like it sweeter, don't add sugar. Use honey
+      instead."
     m_Metadata:
       m_Items: []
-  - m_Id: 2005648629760
-    m_Localized: Example note 2
+  - m_Id: 49749574639620
+    m_Localized: I finally got the last of the tomatoes planted. The old irrigation
+      system decided it was raining again overnight, even though there wasn't a cloud
+      in the sky. I'll have to clean the sensor tomorrow. Last year, I put it off
+      for a week and ended up spending two days bailing water out of the greenhouse.
+      Still, the first sprouts have appeared. I think we'll have a good harvest this
+      year.
     m_Metadata:
       m_Items: []
-  - m_Id: 2063987204096
-    m_Localized: Hey
+  - m_Id: 49749574639617
+    m_Localized: May 15, 2066. The first case of deviant robot behavior was recorded
+      yesterday morning. A domestic assistant robot from the HOMI-200 series made
+      a mess of an apartment and refused to perform its primary functions. The deviant
+      unit was scrapped, and all remaining HOMI-200 units were reprogrammed. Production
+      oversight for the next batch of helper robots has been tightened.
     m_Metadata:
       m_Items: []
-  - m_Id: 2130508865536
-    m_Localized: You gonna be destroyed
+  - m_Id: 49749574639616
+    m_Localized: The district library reminds visitors that its home archive digitization
+      service is now open on Wednesdays and Fridays. We accept audio cassettes, CDs,
+      and floppy disks, as long as their contents can still be read. Please label
+      your boxes. Thank you for helping us preserve historical records!
     m_Metadata:
       m_Items: []
-  - m_Id: 2199551303680
-    m_Localized: sowwy
+  - m_Id: 49749532696576
+    m_Localized: Good evening, North District! Today is November 2, 2064. City authorities
+      have finished repairing the tram stop by the old botanical garden. The first
+      tram will run on its regular schedule tomorrow, Monday. On Thursday, the district
+      library will host a household electronics swap. Bring working radios, cassette
+      players, and other devices that need a new home. Take care, and see you tomorrow!
     m_Metadata:
       m_Items: []
-  - m_Id: 4747741978624
-    m_Localized: 3 english
+  - m_Id: 49749574639619
+    m_Localized: "July 5, 2062. Earth has been hit by an extreme heat wave, with
+      temperatures reaching as high as 59\xB0C. The sharp rise in temperature has
+      caused numerous fires, as well as severe overheating in robots whose systems
+      were not adequately protected. New cooling system standards for domestic helper
+      robots have been introduced to prevent a recurrence of this situation."
     m_Metadata:
       m_Items: []
-  - m_Id: 4819426828288
-    m_Localized: 4 english
+  - m_Id: 49749574639618
+    m_Localized: October 31, 2053. According to medical research, 40% of the world's
+      population now suffers from obesity, while life expectancy has fallen to 65
+      years. The cause behind these figures is the fact that robots now perform all
+      physical labor in the modern world, both in factories and in people's homes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749574639622
+    m_Localized: '"August 10, 2051. Shopping list:
+
+      Milk, sugar, eggs, cat
+      food, cat treats, cream, sausage, tea.
+
+      DO NOT FORGET THE CAT TREATS.
+
+      He
+      was mad at me last time."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749574639623
+    m_Localized: Kate, guess what! We got so much snow today! There wasn't a single
+      snowflake yesterday, and now there are huge snowdrifts everywhere! HOMI just
+      tried to clear the path, but he only piled all the snow onto the porch, right
+      in front of the door. Now he can't get in, and I can't get out... I have to
+      explain to him through the window that clearing snow doesn't mean piling a
+      huge snowdrift in front of the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749574639624
+    m_Localized: Hi... We haven't seen each other in two years. When are you coming
+      back? I miss you. So much has changed at home since you left. Mom has trouble
+      walking now. I try to take care of all the housework, but it's so hard to manage
+      on my own... Please come home. Even if it's just for a couple of days.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749574639625
+    m_Localized: '"URGENT NOTICE TO THE SECURITY DEPARTMENT
+
+      An emergency has
+      been reported in Workshop No. 12: the latest batch of helper robots has malfunctioned
+      and gone on a rampage.
+
+      Immediately cut power to all units in batch #1043."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749574639626
+    m_Localized: '"July 6, 2065. Prototype Report - Development Department.
+
+      System
+      malfunctions have been detected in the latest SORTA prototype. The robot fails
+      to retain information and violates sorting rules.
+
+      The recognition system
+      must be improved."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749578833920
+    m_Localized: '"Good afternoon.
+
+      I am submitting robot SPROUT-48 for disposal.
+
+      According
+      to the customer''s report, instead of taking care of plants, the robot began
+      pulling them out of their pots and throwing them away.
+
+      This unit cannot
+      be reprogrammed."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749578833921
+    m_Localized: '"January 3, 2053. Task list for the Repair Department:
+
+      1.
+      Replace the cassette reader in robot SORTER C-04.
+
+      2. Order a shipment
+      of new parts for the new HOMI-153 model.
+
+      3. Send the latest batch of
+      broken robots for disposal."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749578833922
+    m_Localized: "Hey, C-04? I hope you'll hear it. These guys are from the archive\u2026
+      They didn't tell you, did they? When you're done sorting, you'll be disposed
+      of. There's not enough memory on the tape to tell you what to do. Call me:
+      1735. I will help."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49749578833923
+    m_Localized: Northern District News Channel sticker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51882952843264
+    m_Localized: Nothing on surface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51914460454912
+    m_Localized: 2054 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51933330628608
+    m_Localized: Not visible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51946353942528
+    m_Localized: 2053 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51958869745664
+    m_Localized: 2055 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51970139840512
+    m_Localized: 2043 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52416564781056
+    m_Localized: 2065 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52461468999680
+    m_Localized: 2057 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52493857415168
+    m_Localized: 2065 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52526522654720
+    m_Localized: 2059 year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54965183275008
+    m_Localized: Scrap. Do not listen.
     m_Metadata:
       m_Items: []
   references:

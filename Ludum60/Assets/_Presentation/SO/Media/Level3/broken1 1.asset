@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
-  m_Name: Disk1 2
+  m_Name: broken1 1
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 0
-  <Year>k__BackingField: 2000
-  <Content>k__BackingField: 0
+  <Type>k__BackingField: 3
+  <Year>k__BackingField: 0
+  <Content>k__BackingField: 3
   <IsBroken>k__BackingField: 0
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 0}
   <PhoneNumber>k__BackingField: 
   <IsSecretNumber>k__BackingField: 0
-  <IsSpecialCassette>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: 2852065575287605834, guid: ba49a834b9ffa8d4092956a0aaaf0be0, type: 3}
+  <IsSpecialCassette>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 114943622227296191, guid: 3f8b3974d8cdf034e83eb9a3204ca183, type: 3}
   playerNote:
     m_TableReference:
-      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 2005648629760
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   magnifierNote:
     m_TableReference:
-      m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
+      m_TableCollectionName: 
     m_TableEntryReference:
-      m_KeyId: 4747741978624
+      m_KeyId: 0
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

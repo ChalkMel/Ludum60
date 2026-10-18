@@ -1,5 +1,7 @@
 using System.Collections;
+using _Source.NotebookSystem;
 using TMPro;
+using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
@@ -8,7 +10,7 @@ namespace _Source.Menu
   public class LanguageSelector : MonoBehaviour
   {
     [SerializeField] private TMP_Dropdown dropdown;
-  
+    [SerializeField] private Notebook notebook;
     private readonly string[] localeCodes = { "en", "ru" };
 
     private const string LangKey = "SelectedLanguage";
@@ -26,6 +28,7 @@ namespace _Source.Menu
       PlayerPrefs.SetInt(LangKey, index);
       PlayerPrefs.Save();
       StartCoroutine(ApplyLocale(index));
+      if(notebook != null) notebook.Clear();
     }
 
     private IEnumerator ApplyLocale(int index)
