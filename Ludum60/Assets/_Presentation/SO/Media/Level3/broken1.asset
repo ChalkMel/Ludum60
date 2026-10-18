@@ -15,7 +15,7 @@ MonoBehaviour:
   <Type>k__BackingField: 3
   <Year>k__BackingField: 0
   <Content>k__BackingField: 3
-  <IsBroken>k__BackingField: 0
+  <IsBroken>k__BackingField: 1
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 0}
   <PhoneNumber>k__BackingField: 

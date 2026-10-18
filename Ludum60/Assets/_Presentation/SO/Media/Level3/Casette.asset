@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416c750b26de499a84042c4adad6f95a, type: 3}
   m_Name: Casette
   m_EditorClassIdentifier: 
-  <Type>k__BackingField: 0
+  <Type>k__BackingField: 3
   <Year>k__BackingField: 2054
-  <Content>k__BackingField: 1
-  <IsBroken>k__BackingField: 0
+  <Content>k__BackingField: 3
+  <IsBroken>k__BackingField: 1
   <IsSuspicious>k__BackingField: 0
   <Audio>k__BackingField: {fileID: 0}
   <PhoneNumber>k__BackingField: 

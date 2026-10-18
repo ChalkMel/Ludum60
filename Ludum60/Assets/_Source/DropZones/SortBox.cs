@@ -4,6 +4,7 @@ using _Source.InputSystem;
 using _Source.Media;
 using _Source.RuleSystem;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 namespace _Source.DropZones
@@ -12,12 +13,13 @@ namespace _Source.DropZones
   {
     [SerializeField] private SortRule rule;
     [SerializeField] private ParticleSystem particles;
-
+    [SerializeField] TextMeshProUGUI title;
     private ScoreManager _scoreManager;
 
     public void Init(ScoreManager scoreManager )
     {
       _scoreManager = scoreManager;
+      rule.SetTitle(title);
     }
 
     public void OnDrop(IHoldable held)
