@@ -5189,8 +5189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a345a3e0f584db48423b1f3feb93835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minYear: 0
-  maxYear: 9999
+  minYear: 2051
+  maxYear: 2055
 --- !u!1 &1167941642
 GameObject:
   m_ObjectHideFlags: 0
@@ -6435,8 +6435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a345a3e0f584db48423b1f3feb93835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minYear: 0
-  maxYear: 9999
+  minYear: 2060
+  maxYear: 2066
 --- !u!1 &1283366086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,8 +6949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a345a3e0f584db48423b1f3feb93835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minYear: 0
-  maxYear: 9999
+  minYear: 2056
+  maxYear: 2059
 --- !u!1 &1435633503
 GameObject:
   m_ObjectHideFlags: 0
