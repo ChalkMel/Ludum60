@@ -21,7 +21,7 @@ MonoBehaviour:
   <PhoneNumber>k__BackingField: 
   <IsSecretNumber>k__BackingField: 0
   <IsSpecialCassette>k__BackingField: 0
-  <Sprite>k__BackingField: {fileID: -2617984254392604252, guid: 941217007bd3d7e4bbd3bc4b2b5c9a9e, type: 3}
+  <Sprite>k__BackingField: {fileID: 3122698745603813986, guid: 6037b279962547740b52e41b13fd3a1e, type: 3}
   playerNote:
     m_TableReference:
       m_TableCollectionName: GUID:c44be01868450f048ab83991748e225e
