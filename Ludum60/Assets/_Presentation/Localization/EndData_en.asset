@@ -19,15 +19,23 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 35516932096
-    m_Localized: Then he
+    m_Localized: 'SHIFT COMPLETE
+
+      All assigned media have been processed.
+
+      Task:
+      COMPLETE.'
     m_Metadata:
       m_Items: []
   - m_Id: 113556152320
-    m_Localized: Got destroyed
+    m_Localized: 'Sorting unit SORTER C-04 has been transferred to the disposal sector.
+
+      Thank
+      you for your service.'
     m_Metadata:
       m_Items: []
   - m_Id: 150067568640
-    m_Localized: lol
+    m_Localized: ...
     m_Metadata:
       m_Items: []
   - m_Id: 253524271104
@@ -39,7 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 333773889536
-    m_Localized: yappy
+    m_Localized: Signal lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258908270190592
+    m_Localized: Connection terminated.
     m_Metadata:
       m_Items: []
   references:

@@ -24,7 +24,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 150067568640
-    m_Key: Bad_3
+    m_Key: dots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258908270190592
+    m_Key: Bad_4
     m_Metadata:
       m_Items: []
   - m_Id: 253524271104

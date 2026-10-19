@@ -9,6 +9,7 @@ namespace _Source.DropZones
   public class Shredder : MonoBehaviour, IDropTarget
   {
     [SerializeField] private ParticleSystem particles;
+    [SerializeField] private AudioSource sfx;
     private ScoreManager _scoreManager;
 
     public void Init(ScoreManager scoreManager )
@@ -22,6 +23,7 @@ namespace _Source.DropZones
       _scoreManager.Record(shouldShred);
       item.Consume();
       particles.Play();
+      sfx.Play();
       transform.DOPunchScale(Vector3.one * 0.2f, 0.3f, 1);
     }
   }

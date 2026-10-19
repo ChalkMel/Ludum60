@@ -10,7 +10,7 @@ namespace _Source.DropZones
   {
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioSource sfx;
-    [SerializeField] private AudioClip incert
+    [SerializeField] private AudioClip insert;
     [SerializeField] private AudioClip eject;
     [SerializeField] private Sprite playSprite;
     [SerializeField] private SpriteRenderer slot;
@@ -46,7 +46,8 @@ namespace _Source.DropZones
     {
       _inserted = item;
       slot.sprite = item.Data.Sprite;
-      sfx.Play(incert);
+      sfx.clip = insert;
+      sfx.Play();
       
       item.transform.SetParent(transform, true);
       item.Stash();
@@ -62,7 +63,8 @@ namespace _Source.DropZones
       _inserted = null;
       slot.sprite = null;
       source.Stop();
-      sfx.Play(eject);
+      sfx.clip = eject;
+      sfx.Play();
       item.transform.SetParent(null, true);
       item.Restore();
       DragController.Instance.PickUp(item);
