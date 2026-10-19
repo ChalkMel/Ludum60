@@ -9,6 +9,7 @@ namespace _Source.PhoneSystem
   {
     [SerializeField] private GameObject root;
     [SerializeField] private TextMeshProUGUI label;
+    [SerializeField] private TypewriterText typewriter;
     [SerializeField] private Button nextButton;
     [SerializeField] private TextMeshProUGUI nextButtonLabel;
 
@@ -32,24 +33,27 @@ namespace _Source.PhoneSystem
       root.SetActive(true);
       RenderCurrent();
     }
-    
+
     public void Show(string text) => Show(new[] { text });
 
     public void Close()
     {
       _pages = null;
+      typewriter.Stop();
       if (root != null) root.SetActive(false);
     }
 
     private void Advance()
     {
+      if (typewriter.IsPlaying) { typewriter.Complete(); return; }
+
       if (_index < _pages.Length - 1) { _index++; RenderCurrent(); }
       else Close();
     }
 
     private void RenderCurrent()
     {
-      label.text = _pages[_index];
+      typewriter.Play(_pages[_index]);
 
       if (nextButtonLabel != null)
         nextButtonLabel.text = _index < _pages.Length - 1

@@ -3,6 +3,7 @@ using _Source.Core;
 using _Source.InputSystem;
 using _Source.Media;
 using _Source.NotebookSystem;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Source.DropZones
@@ -39,6 +40,7 @@ namespace _Source.DropZones
       item.transform.SetParent(null, true);
       item.transform.position = spawnPoint.position;
       DragController.Instance.PickUp(item);
+      transform.DOPunchScale(Vector3.one * 0.2f, 0.3f, 1);
     }
     
     public void OnDrop(IHoldable held)

@@ -11,10 +11,12 @@ namespace _Source.Story
   {
     [SerializeField] private CanvasGroup root;
     [SerializeField] private TextMeshProUGUI label;
+    [SerializeField] private TypewriterText typewriter;
     [SerializeField] private Button nextButton;
     [SerializeField] private TextMeshProUGUI nextButtonLabel;
     [SerializeField] private float fadeDuration = 1.5f;
     [SerializeField] private LevelController levelController;
+
     private string[] _pages;
     private int _index;
 
@@ -56,29 +58,24 @@ namespace _Source.Story
 
     private void Advance()
     {
-      if (_index < _pages.Length - 1)
-      {
-        _index++;
-        RenderCurrent();
-      }
+      if (typewriter.IsPlaying) { typewriter.Complete(); return; }
+
+      if (_index < _pages.Length - 1) { _index++; RenderCurrent(); }
+      else OpenMainMenu();
     }
 
     private void RenderCurrent()
     {
-      label.text = _pages[_index];
+      typewriter.Play(_pages[_index]);
 
       bool last = _index == _pages.Length - 1;
       if (nextButtonLabel != null)
         nextButtonLabel.text = last ? Loc.Get("end") : Loc.Get("next");
-      if (last)
-      {
-        nextButton.onClick.AddListener(OpenMainMenu);
-      }
     }
-    
+
     public void OpenMainMenu()
     {
-      SceneManager.LoadScene($"MainMenu");
+      SceneManager.LoadScene("MainMenu");
     }
   }
 }

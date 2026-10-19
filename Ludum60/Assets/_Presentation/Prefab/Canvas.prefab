@@ -439,6 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 3146130403912742150}
   label: {fileID: 2450406198864403382}
+  typewriter: {fileID: 1356283743872665668}
   nextButton: {fileID: 2677146561002773879}
   nextButtonLabel: {fileID: 2581165840841770604}
 --- !u!1 &3225384383635650181
@@ -1582,6 +1583,7 @@ GameObject:
   - component: {fileID: 8320061737396750253}
   - component: {fileID: 984237436744948187}
   - component: {fileID: 2450406198864403382}
+  - component: {fileID: 1356283743872665668}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1707,3 +1709,17 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1356283743872665668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971154913826547243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b64166113be4246867afba61d6d940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 2450406198864403382}
+  charsPerSecond: 40
